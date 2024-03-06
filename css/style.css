@@ -1,0 +1,290 @@
+/* Reset */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+
+/* Estilos generales y de la barra de navegación */
+
+body {
+    overflow-x: hidden;
+    }
+
+header, footer {
+    width: 100%;
+}    
+
+.bg-nav {
+    background-color: #2e7d4f;
+}
+.menu {
+    flex-grow: 0;
+}
+
+.menu .menu-ul{
+    column-gap: 10px;
+    align-items: center;
+}
+
+.menu ul li a{
+    color: #133923;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: #0f2217;
+    text-decoration: underline;
+}
+
+.menu-boton{
+    border: none;
+}
+
+.menu-button:focus{
+    box-shadow: none;
+}
+
+.menu-icon {
+    background-image: url(../img/burger-menu.svg);
+}
+
+.padding-0{
+    padding: 0;
+}
+
+body main {
+    background-color: #99b6a5
+}
+
+/* Estilos de la sección de portada */
+
+.portada {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(/entregas-coder/img/arenga-equipo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.bckg-h1 {
+    background-color: #92c2a6;
+    font-weight: 500;
+    
+}
+
+.bckg-card {
+    background-color: #4e8565;
+}
+
+hr {
+    color: rgb(100, 100, 100);
+    border: solid 2px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.sub1 h2 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(2, 2, 53);
+    
+}
+
+.sub1 p {
+    font-weight:600;
+    font-size: 20px;
+    color: rgb(22, 22, 56);
+    text-align: center;
+}
+
+
+.sede-social {
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    border: 1px solid;
+}
+
+/* Estilos de la sección de institucional */
+
+.titulo-institucional {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #799e88;
+    text-align: center;
+    font-size:3rem;
+    color: #0f2217;
+    margin: 2px;
+    padding: 2px;
+    
+}
+
+.perfiles {
+    display: grid;
+    background-color:rgb(152, 176, 111);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.hijo {
+    background-color: #799e88;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.hijo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.hijo p{
+    font-weight:700;
+    color: #0f2217;
+    text-align: center;
+}
+
+
+/* Estilos de la sección Socios */
+
+.bienvenida p {
+    font-weight:600;
+    font-size: 20px;
+    color: rgb(22, 22, 56);
+    text-align:center;
+    line-height: 25px;
+}
+.asociate h2{
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(2, 2, 53);
+    text-align: left;
+}
+.asociate p form {
+    font-weight:700;
+    font-size: 25px;
+    color: rgba(7, 7, 120, 0.959);
+}
+
+.ubi-club {
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+
+.datos-club {
+    font-weight:500;
+    font-size: 20px;
+    color: rgba(7, 7, 120, 0.959);
+    line-height: 20px;
+    text-align: justify;
+}
+
+.datos-socio div,
+.asociate div{
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    color:rgb(2, 2, 53)
+}
+
+.datos-socio h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(2, 2, 53);
+    text-align: center;
+}
+
+
+/* Estilos de la sección Deportes */
+
+.disciplinas {
+    text-align: center;
+}
+
+.disciplinas figure {
+    margin: 20px;
+    padding: 20px;
+}
+
+.disciplinas  h2 {
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(2, 2, 53);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.disciplinas div {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(2, 2, 53);
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+
+/* Media query Tablet (entre 768px - 1024px)*/
+
+@media screen and (max-width: 1024px) {
+    .navbar-brand img {
+        width: 200px;
+        height: auto;
+    }
+    .nav.link {
+        font-size: 20px;
+    }
+    .hero {
+        height: 70vh;
+    }
+    .titulo-institucional {
+        font-size: 2rem;
+    }
+    .perfiles {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Media query Mobile (entre 320px - 768px)*/
+
+@media screen and (max-width: 768px){
+    .navbar-brand img {
+        width: 150px;
+        height: auto;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link {
+        font-size: 18px;
+    }
+    .titulo-institucional {
+        font-size: 1rem;
+    }
+    .hijo img {
+        width: 150px;
+    }
+    .hero {
+        height: 30vh;
+    }
+}
