@@ -67,7 +67,7 @@ body main {
 .portada {
     width: 100%;
     margin: 0 auto;
-    background-image: url(/img/arenga-equipo.jpg);
+    background-image: url(../img/arenga-equipo.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
