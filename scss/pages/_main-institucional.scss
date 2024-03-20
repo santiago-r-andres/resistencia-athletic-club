@@ -1,0 +1,48 @@
+/* Main Institucional */
+
+.main-institucional {
+    .titulo-institucional{
+        @include flex(row, center, center);
+        //display: flex;
+        //flex-direction: row;
+        //justify-content: center;
+        //align-items: center;
+        background-color: #799e88;
+        text-align: center;
+        font-size:3rem;
+        color: $color-h1;
+        margin: 2px;
+        @extend %estilo-item;
+        //padding: 2px;
+    }
+    .perfiles{
+        @include grid(repeat(2, 1fr), repeat(2, auto), 5px, center, hidden);
+        //display: grid;
+        //grid-template-columns: repeat(2, 1fr);
+        //grid-template-rows: repeat(2, auto);
+        //gap: 5px;
+        //align-items: center;
+        //overflow: hidden;
+        justify-items: center;
+        .hijo{
+            width: 80%;
+            flex: 1;
+            @include flex(column, center, center);
+            //display: flex;
+            //flex-direction: column;
+            //align-items: center;
+            //justify-content: center;
+            img {
+                height: 300px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+            }
+            p {
+                @extend %estilos;
+                //font-weight:700;
+                color: $color-p;
+                //text-align: center;
+            } 
+        }
+    }
+}

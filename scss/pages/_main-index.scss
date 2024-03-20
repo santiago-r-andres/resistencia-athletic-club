@@ -1,0 +1,18 @@
+/* Main index */
+
+.main-index {
+    .portada {
+        width: 100%;
+        margin: 0 auto;
+        background-image: url(../img/arenga-equipo.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        .bckg-h1 {
+            background-color: #92c2a6;
+            font-weight: 500;
+            color: $color-h1;            
+        }
+    }
+}

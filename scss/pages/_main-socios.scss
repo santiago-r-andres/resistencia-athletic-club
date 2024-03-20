@@ -1,0 +1,28 @@
+/* Main socios */
+
+.main-socios{
+    .bienvenida{
+        p{
+            @extend %estilos;
+            font-weight:600;
+            font-size: 20px;
+            color: $color-p;
+            //text-align:center;
+            line-height: 25px;
+        }
+    }
+    .asociate{
+        h1{
+            font-weight: bolder;
+            font-size: 40px;
+            color: $color-h1;
+            text-align: left;
+        }
+        p{
+            //font-weight:700;
+            //font-size: 25px;
+            @extend %estilos;
+            color: $color-p;
+        }
+    }
+}

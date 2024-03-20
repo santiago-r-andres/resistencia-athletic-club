@@ -11,18 +11,13 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
     <link
       rel="icon"
       href="./img/logo-para-header.png"
       type="image/png"
       sizes="16x16"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,62 +75,125 @@
     </nav>
   </header>
   <hr>
-  <main class="disciplinas">
-    <h1>DEPORTES</h1>
-    <br>
+  <main class="main-deportes">
+    <div class="disciplinas">
+      <h1>DEPORTES</h1>
+    </div>
     <section>
-    <figure>
-      <img src="./../img/deporte-basquet.jpg" alt="Aro de basquet y Balón">
-    </figure>
-      <h2>BASQUET</h2>
-      <br>
-      <div>
-      <h3>HORARIOS</h3>
-      <ul>
-          <li>Minibasquet Mixto: Lunes, Miércoles y Viernes 16.30 horas</li>
-          <li>Formativas: Lunes, Miércoles y Viernes 20.00 horas</li>
-          <li>Primera: Lunes a Viernes 21.00 horas</li>
+      <div class="d-flex justify-content-center align-items-center">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active d-item">
+              <img src="./../img/deporte-basquet.jpg" class="d-block  d-img" alt="Mujer lanzando balón al aro de basquet">
+            </div>
+            <div class="carousel-item d-item">
+              <img src="./../img/imagen-basquet-2.jpg" class="d-block  d-img" alt="Grupo de personas jugando al basquet">
+            </div>
+            <div class="carousel-item d-item">
+              <img src="./../img/imagen-basquet-3.jpg" class="d-block  d-img" alt="Reunión manos del equipo para alentar">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+      <div class="dropdown d-flex align-items-center justify-content-center my-2">
+        <button class="btn b-deportes btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          BASQUET
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item">Minibasquet Mixto: Lunes, Miércoles y Viernes 16.30 horas</a></li>
+          <li><a class="dropdown-item">Formativas: Lunes, Miércoles y Viernes 20.00 horas</a></li>
+          <li><a class="dropdown-item">Primera: Lunes a Viernes 21.00 horas</a></li>
         </ul>
-      </div>
+      </div>    
+  </section>
+
+  <section>
+    <div class="d-flex justify-content-center align-items-center">
+        <div id="carouselExample1" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active d-item">
+              <img src="./../img/deporte-futbol.jpg" class="d-block  d-img" alt="Mujer lanzando balón al aro de basquet">
+            </div>
+            <div class="carousel-item d-item">
+              <img src="./../img/imagen-futbol-2.jpg" class="d-block  d-img" alt="Grupo de personas jugando al basquet">
+            </div>
+            <div class="carousel-item d-item">
+              <img src="./../img/imagen-futbol-3.jpg" class="d-block  d-img" alt="Reunión manos del equipo para alentar">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+        <div class="dropdown d-flex align-items-center justify-content-center my-2">
+          <button class="btn b-deportes btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            FUTBOL
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Infantiles: Lunes, Miércoles y Viernes 17.00 horas</a></li>
+            <li><a class="dropdown-item">Sub-15: Lunes, Miércoles y Viernes 18.00 horas</a></li>
+            <li><a class="dropdown-item">Sub-17: Lunes a Viernes 19.00 horas</a></li>
+            <li><a class="dropdown-item">Sub-20: Lunes a Viernes 20.00 horas</a></li>
+            <li><a class="dropdown-item">Lunes a Viernes 21.00 horas</a></li>
+          </ul>
+        </div>   
   </section>
   <section>
-    <figure>
-      <img src="./../img/deporte-futbol.jpg" alt="Dos niños disputando el balón de futbol">
-    </figure>
-      <h2>FUTBOL</h2>
-      <br>
-      <div>
-      <h3>HORARIOS</h3>
-        <ul>
-          <li>Infantiles: Lunes, Miércoles y Viernes 17.00 horas</li>
-          <li>Sub-15: Lunes, Miércoles y Viernes 18.00 horas</li>
-          <li>Sub-17: Lunes a Viernes 19.00 horas</li>
-          <li>Sub-20: Lunes a Viernes 20.00 horas</li>
-          <li>Primera: Lunes a Viernes 21.00 horas</li>
-        </ul>
+    <div class="d-flex justify-content-center align-items-center">
+      <div id="carouselExample2" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active d-item">
+            <img src="./../img/deporte-voley.jpg" class="d-block  d-img" alt="Mujer lanzando balón al aro de basquet">
+          </div>
+          <div class="carousel-item d-item">
+            <img src="./../img/imagen-voley-2.jpg" class="d-block  d-img" alt="Grupo de personas jugando al basquet">
+          </div>
+          <div class="carousel-item d-item">
+            <img src="./../img/imagen-voley-3.jpg" class="d-block  d-img" alt="Reunión manos del equipo para alentar">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-  </section>
-  <section>
-    <figure>
-      <img src="./../img/deporte-voley.jpg" alt="Jugadora de voley saltando para un remate">
-    </figure>
-      <h2>VOLEY</h2>
-      <br>
-      <div>
-      <h3>HORARIOS</h3>
-        <ul>
-          <li>Infantiles Mixto: Lunes, Miércoles y Viernes 16.00 horas</li>
-          <li>Formativas Femenina: Lunes, Miércoles y Viernes 18.00 horas</li>
-          <li>Formativas Masculina: Lunes, Miércoles y Viernes 19.00 horas</li>
-          <li>Primera Femenina: Lunes a Viernes 20.00 horas</li>
-          <li>Primera Masculina: Lunes a Viernes 21.00 horas</li>
-        </ul>
       </div>
+      <div class="dropdown d-flex align-items-center justify-content-center mt-2">
+        <button class="btn b-deportes btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          VOLEY
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item">Infantiles Mixto: Lunes, Miércoles y Viernes 16.00 horas</a></li>
+          <li><a class="dropdown-item">Formativas Femenina: Lunes, Miércoles y Viernes 18.00 horas</a></li>
+          <li><a class="dropdown-item">Formativas Masculina: Lunes, Miércoles y Viernes 19.00 horas</a></li>
+          <li><a class="dropdown-item">Primera Femenina: Lunes a Viernes 20.00 horas</a></li>
+          <li><a class="dropdown-item">Primera Masculina: Lunes a Viernes 21.00 horas</a></li>
+        </ul>
+      </div>  
   </section>
   </main>
   <hr>
-     <!-- Footer -->
-     <footer class="mt-auto py-3 bg-dark text-white">
+  
+    <!-- Footer -->
+    <footer class="mt-auto py-3 bg-dark text-white">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 mb-1">
@@ -168,9 +226,33 @@
             <img src="../img/sede-social.jpg" alt="Sede Social de Resistencia Athletic Club" class="sede-social">
           </div>
         </div>        
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 my-2">
+              <h3>SEGUINOS</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-6 text-left">
+                <img
+                  src="./../img/facebook-logo.svg"
+                  alt="Logo de Facebook"
+                  width="200px"
+                  height="20px"
+                />
+                <h4 class="text-white">Facebook</h4>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 text-left">
+                <img
+                  src="./../img/instagram-logo.svg"
+                  alt="Logo de Instagram"
+                  width="200px"
+                  height="20px"
+                />
+                <h4 class="text-white">Instagram</h4>
+              </div>
+            </div>
           </div>  
         </div> 
-      </div>
     </footer>
       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

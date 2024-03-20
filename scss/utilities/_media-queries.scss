@@ -1,0 +1,115 @@
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+    // Header
+
+    header{
+        .navbar-brand{
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }     
+        }
+    
+        .navbar-nav{
+            li{
+                .nav-link {
+                    font-size: 20px;
+                }
+            }
+        }
+        
+    }
+
+    
+
+    // Main institucional
+    .main-institucional{
+        .titulo-institucional {
+            font-size: 2rem;
+        }
+        .perfiles{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // Main contacto
+    .main-contacto{
+        .datos-club {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }    
+
+
+/* Media query Max 991 px (entre 769px - 991px) */    
+
+// Header
+
+@media screen and (max-width: 991px){
+    header{
+        .navbar-brand{
+            img {
+                width: 150px;
+                height: auto;
+        }
+    }
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        li{
+            .nav-link {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+/* Media query Mobile (entre 320px - 768px)*/
+
+// Header
+
+@media screen and (max-width: 768px){
+    header{
+        .navbar-brand{
+            img {
+                width: 150px;
+                height: auto;
+        }
+    }
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        li{
+            .nav-link {
+                font-size: 18px;
+            }
+        }
+    }
+    
+
+    // Main institucional
+
+    .main-institucional{
+        .titulo-institucional {
+            font-size: 1rem;
+        }
+        .perfiles{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+    .label-style {
+        margin-top: 5px;
+    }
+
+    // Main contacto
+    .main-contacto{
+        .datos-club {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }   
+}

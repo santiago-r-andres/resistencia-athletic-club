@@ -1,0 +1,43 @@
+/* Main contacto */
+
+.main-contacto{
+    .datos-club{
+        @include grid(repeat(2, 1fr), repeat(2, auto), 5px, center, hidden);
+        //display: grid;
+        //grid-template-columns: repeat(2, 1fr);
+        //grid-template-rows: repeat(2, auto);
+        //gap: 5px;
+        //align-items: center;
+        //overflow: hidden;
+        margin-top: 2px;
+        justify-items: center;
+        
+        .grid-item{
+            width: 100%;
+            @include flex(column, center, center);
+            //display: flex;
+            //flex-direction: column;
+            //justify-content: center;
+            //align-items: center;
+            @extend %estilo-item;
+            //padding: 10px;
+            //border: 2px solid  #0e1c14f8;
+            //box-shadow: 0 2px 7px 0 rgba(0,0,0,.15);
+            overflow: hidden;
+            h1{
+                @extend %estilos;
+                font-weight: 900;
+                font-size: 50px;
+                color: $color-h1;
+                //text-align: center;
+                text-decoration: $tdecoration-predeterminada;
+            }
+            p{
+                @extend %estilos;
+                //text-align: center;
+                //font-weight:700;
+                color: $color-p;
+            }  
+        }
+    }
+}

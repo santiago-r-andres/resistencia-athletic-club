@@ -1,0 +1,66 @@
+/* Estilos globales */
+html {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+hr {
+    color: rgb(100, 100, 100);
+    border: solid 2px;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #99b6a5
+}
+
+.bckg-card{
+    background-color: #4e8565;
+    @extend %estilo-item;
+}
+
+/* Estilos para Inputs */
+
+.inputs-style {
+    @extend %estilo-input;
+    //width: 100%;
+    //padding: 10px;
+    //margin-top: 5px;
+    //margin-bottom: 5px;
+    //border-radius: 5px;
+    //border: 1px solid #ccc;
+    //box-sizing: border-box;
+    //box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.label-style {
+    margin-top: 10px;
+}
+
+/* Estilos para el botón de Enviar */
+input[type="submit"] {
+    @extend %estilo-btn-enviar;
+    //display: flex;
+    //align-items: center;
+    //background-color: green;
+    //color: white;
+    //border: none;
+    //padding: 10px 20px;
+    //cursor: pointer;//
+    //border-radius: 5px;
+}
+
+  /* Estilos para el botón cuando el cursor está encima */
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+ /* Estilos para el botón cuando está activo */
+input[type="submit"]:active {
+    background-color: lightgreen;
+}
+
